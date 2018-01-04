@@ -2,7 +2,6 @@ package com.linyou.lifeservice;
 
 public class Constant {
 
-	//public static final String URLBASE = "http://2.5.2.74:9080/";  //下载图片是用到的网址
 	public static final String URLBASE = "http://2.1.1.221/";  //下载图片是用到的网址
 
 	//微信的真实数据 注册码
@@ -16,8 +15,7 @@ public class Constant {
 
 	public static final String session_pref = "JSESSIONID";   //配置信息中session值对应的键
 
-	//public static final String COOKIE_DOMAIN = "2.5.209.74:9080";
-	public static final String COOKIE_DOMAIN = "2.1.169.221:8080";
+	public static final String COOKIE_DOMAIN = "2.1.1.2:8080";
 
 	public static final String district_pref = "district";
     public static final String address_pref = "address";//配置信息中地址值对应的键
