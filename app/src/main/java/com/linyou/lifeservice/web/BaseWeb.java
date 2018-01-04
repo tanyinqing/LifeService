@@ -40,13 +40,8 @@ import android.widget.Toast;
  * 
  */
 public class BaseWeb<T> {
-	//protected static String BaseUrl = "http://211.149.169.221:8080" + "/umijoy";
-	//无线服务器
-	//protected static String BaseUrl = "http://192.168.10.122:8080" + "/umijoy";
-	//有线服务器
-	//protected static String BaseUrl = "http://210.56.209.74:9080" + "/umijoy";
 	//真正的服务器
-	protected static String BaseUrl = "http://211.149.169.221:8080" + "/umijoyappsvr";
+	protected static String BaseUrl = "http://2.1.1.2:8080" + "/umijoyappsvr";
 	private static String TAG = "BaseWeb";
 	private HttpUtils mHttpUtil = null;//网络请求的实例
 	private Context mContext;
