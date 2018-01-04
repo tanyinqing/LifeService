@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linyou.lifeservice"
+    android:versionCode="3"
+    android:versionName="1.0.2">
+<!--第一版是2为版本-->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!--这是上网和访问外部内存卡的权限  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!--允许程序访问有关GSM网络信息  -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!--允许程序改变Wi-Fi连接状态  -->
+    <!-- 电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.linyou.lifeservice.ServiceApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">                                                 <!-- SplashScreenActivity启动页面 -->
+        <activity
+            android:name="com.linyou.lifeservice.activity.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>                                                              <!--MainActivity 主页面 -->
+        <activity
+            android:name="com.linyou.lifeservice.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>     <!--RegisterAcitivty 注册页面 -->
+        <activity
+            android:name="com.linyou.lifeservice.activity.RegisterAcitivty"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--LoginAcitvity登录页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.LoginAcitvity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--UserCenterActivity个人中心 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.UserCenterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--DistrictSelectActivity选择区域 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.DistrictSelectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--OrderListActivity商品的订单 列表页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.OrderListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--AdviceActivity意见反馈 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.AdviceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--AboutActivity关于我们 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.AboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--CollectionActivity收藏 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.CollectionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--AddrManageActivity常用地址 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.AddrManageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--SettingActivity设置 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--UserInfoActivity 修改资料 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.UserInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--ModifyPassWordActivity修改密码 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.ModifyPassWordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>   <!--FindPwdActivity找回密码  的页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.FindPwdActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>   <!--ShoppingCarActivity购物车 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.ShoppingCarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>     <!--GoodsListActivity 商品列表页面 -->
+        <activity
+            android:name="com.linyou.lifeservice.activity.GoodsListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>    <!--GoodsDetailActivity 商品详情 页面 -->
+        <activity
+            android:name="com.linyou.lifeservice.activity.GoodsDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>    <!--ConfirmActivity结算 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.ConfirmActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>   <!--OrderDetailActivity订单详情的 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.OrderDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>   <!--AddrEditActivity编辑收货人 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.AddrEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--AddrModificationActivity修改收货人 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.AddrModificationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity> <!--ContactUsActivity联系我们 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.ContactUsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>   <!--CommentListActivity商品评论列表 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.CommentListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>   <!--AdDetailActivity广告详情 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.AdDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>  <!--CommentActivity商品评论 页面-->
+        <activity
+            android:name="com.linyou.lifeservice.activity.CommentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+    </application>
+
+</manifest>

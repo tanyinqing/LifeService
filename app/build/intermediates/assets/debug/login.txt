@@ -1,0 +1,17 @@
+{
+    "data": {
+        "age": 0,
+        "email": "dd@fg",
+        "gender": 1,
+        "logins": 1,
+        "password": "e10adc3949ba59abbe56e057f20f883e",
+        "photoMob": "15614367919",
+        "portrait": "data/files/head/20170526104017.png",
+        "realName": "iOS测试",
+        "regTime": 1483896756,
+        "userId": 573,
+        "userName": "15614367919"
+    },
+    "msg": "登陆成功！",
+    "success": true
+}

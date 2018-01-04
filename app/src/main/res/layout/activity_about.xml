@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="公司介绍 \n
+公司成立于2013年底，是一家专注实体中小型商户的网络服务型电子商务公司。公司的目标是通过对线下实体店铺资源的整合、优化，在线上（如网站、APP、以及未来的可穿戴设备）进行商品展示和服务预订，同线下的门店以及高效的配送相结合，给人们提供一种“快、精、便”的生活方式。公司所提供的服务，希望能帮助顾客打理好生活中琐碎的事物，协助管理好顾客生活的方方面面。我们的存在，那就是希望帮助我们的顾客的生活更加便捷，省心，生活质量更好。\n
+客服电话: \n
+028-83223381
+            " />
+    </LinearLayout>
+
+</ScrollView>

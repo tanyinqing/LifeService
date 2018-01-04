@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">邻优网</string>
+    <string name="is_positive">确定</string>
+    <string name="cancel">取消</string>
+    <string name="cancel1">放弃支付</string>
+    <string name="Dialog_title">提示</string>
+    <string name="Dialog_title1">继续支付</string>
+    <string name="Dialog_message">请确认是否要删除？</string>
+    <string name="WeiXinZhiFu1">微信支付成功!</string>
+    <string name="WeiXinZhiFu2">微信支付失败!</string>
+    <string name="WeiXinZhiFu3">微信支付已经取消!</string>
+    <string name="WeiXinZhiFu4">微信支付测试!</string>
+    <string name="phone_number_ofzixun">tel://1513214</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+</resources>

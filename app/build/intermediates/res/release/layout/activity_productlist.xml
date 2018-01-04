@@ -1,0 +1,187 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <FrameLayout
+                    android:id="@+id/rela"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                   <!-- 这个是默认的图片-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_ad" />
+<!--这个是相册-->
+                    <com.linyou.lifeservice.customview.ImageGallery
+                        android:id="@+id/adsGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <!--这个是下面的4个点-->
+                    <LinearLayout
+                        android:id="@+id/adimage_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkgreen"
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前:"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:id="@+id/diZhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/tv_qiehuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[切换]"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkgreen"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <EditText
+                        android:id="@+id/editContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:hint="输入商品名字" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <!-- android:checked="true" android:drawableRight="@drawable/sort_selector"   android:background="#818586"-->
+                    <RadioButton
+                        android:id="@+id/radioPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableRight="@drawable/ic_sort_nor"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="价格"
+                        android:textColor="@drawable/text_sort_selector"
+                        android:textSize="16sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableRight="@drawable/ic_sort_nor"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="销量"
+                        android:textColor="@drawable/text_sort_selector"
+                        android:textSize="16sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableRight="@drawable/ic_sort_nor"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="上架时间"
+                        android:textColor="@drawable/text_sort_selector"
+                        android:textSize="16sp" />
+                </RadioGroup>
+
+                <FrameLayout
+                    android:id="@+id/rela1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   >
+                <!-- 这个是默认的图片-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/default_ad1" />
+                <com.linyou.lifeservice.customview.MyListView
+                    android:id="@+id/listProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                </FrameLayout>
+            </LinearLayout>
+             </ScrollView>
+
+         </com.ab.view.pullview.AbPullToRefreshView>
+
+
+         <include layout="@layout/layout_car"
+             android:layout_width="65dp"
+             android:layout_height="65dp"
+             android:layout_gravity="bottom|right"
+             android:layout_margin="35dp"/>
+
+     </FrameLayout><!-- From: file:/D:/studiospace/LifeService/app/src/main/res/layout/activity_productlist.xml -->
