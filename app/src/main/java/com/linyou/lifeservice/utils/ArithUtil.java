@@ -2,56 +2,56 @@ package com.linyou.lifeservice.utils;
 
 import java.math.BigDecimal;
 
-//´óÊı¾İµÄ¼Ó¼õ³Ë³ı
+//å¤§æ•°æ®çš„åŠ å‡ä¹˜é™¤
 public class ArithUtil
 {
     private static final int DEF_DIV_SCALE = 10;
-    
+
     public static double add(String d1, String d2)
     {
         BigDecimal b1 = new BigDecimal(d1);
         BigDecimal b2 = new BigDecimal(d2);
         return b1.add(b2).doubleValue();
-        
+
     }
-    
+
     public static double sub(String d1, String d2)
     {
         BigDecimal b1 = new BigDecimal(d1);
         BigDecimal b2 = new BigDecimal(d2);
         return b1.subtract(b2).doubleValue();
-        
+
     }
-    
+
     public static double mul(String d1, String d2)
     {
         BigDecimal b1 = new BigDecimal(d1);
         BigDecimal b2 = new BigDecimal(d2);
         return b1.multiply(b2).doubleValue();
-        
+
     }
     /**
-     * Ìá¹©£¨Ïà¶Ô£©¾«È·µÄ³ı·¨ÔËËã£¬µ±·¢Éú³ı²»¾¡µÄÇé¿öÊ±£¬¾«È·µ½
-     * Ğ¡ÊıµãÒÔºó10Î»£¬ÒÔºóµÄÊı×ÖËÄÉáÎåÈë¡£
-     * @param d1 ±»³ıÊı
-     * @param d2 ³ıÊı
-     * @return Á½¸ö²ÎÊıµÄÉÌ
-     * ¼ÆËãµÄ½á¹û0.3333333333333333
-     * ¼ÆËãµÄ½á¹û0.3333333333
+     * æä¾›ï¼ˆç›¸å¯¹ï¼‰ç²¾ç¡®çš„é™¤æ³•è¿ç®—ï¼Œå½“å‘ç”Ÿé™¤ä¸å°½çš„æƒ…å†µæ—¶ï¼Œç²¾ç¡®åˆ°
+     * å°æ•°ç‚¹ä»¥å10ä½ï¼Œä»¥åçš„æ•°å­—å››èˆäº”å…¥ã€‚
+     * @param d1 è¢«é™¤æ•°
+     * @param d2 é™¤æ•°
+     * @return ä¸¤ä¸ªå‚æ•°çš„å•†
+     * è®¡ç®—çš„ç»“æœ0.3333333333333333
+     * è®¡ç®—çš„ç»“æœ0.3333333333
      */
     public static double div(double d1, double d2)
     {
-        
+
         return div(d1, d2, DEF_DIV_SCALE);
-        
+
     }
     /**
-     * Ìá¹©£¨Ïà¶Ô£©¾«È·µÄ³ı·¨ÔËËã¡£µ±·¢Éú³ı²»¾¡µÄÇé¿öÊ±£¬ÓÉscale²ÎÊıÖ¸
-     * ¶¨¾«¶È£¬ÒÔºóµÄÊı×ÖËÄÉáÎåÈë¡£
-     * @param d1 ±»³ıÊı
-     * @param d2 ³ıÊı
-     * @param scale ±íÊ¾±íÊ¾ĞèÒª¾«È·µ½Ğ¡ÊıµãÒÔºó¼¸Î»¡£
-     * @return Á½¸ö²ÎÊıµÄÉÌ
+     * æä¾›ï¼ˆç›¸å¯¹ï¼‰ç²¾ç¡®çš„é™¤æ³•è¿ç®—ã€‚å½“å‘ç”Ÿé™¤ä¸å°½çš„æƒ…å†µæ—¶ï¼Œç”±scaleå‚æ•°æŒ‡
+     * å®šç²¾åº¦ï¼Œä»¥åçš„æ•°å­—å››èˆäº”å…¥ã€‚
+     * @param d1 è¢«é™¤æ•°
+     * @param d2 é™¤æ•°
+     * @param scale è¡¨ç¤ºè¡¨ç¤ºéœ€è¦ç²¾ç¡®åˆ°å°æ•°ç‚¹ä»¥åå‡ ä½ã€‚
+     * @return ä¸¤ä¸ªå‚æ•°çš„å•†
      */
     public static double div(double d1, double d2, int scale)
     {
@@ -62,7 +62,7 @@ public class ArithUtil
         BigDecimal b1 = new BigDecimal(Double.toString(d1));
         BigDecimal b2 = new BigDecimal(Double.toString(d2));
         return b1.divide(b2, scale, BigDecimal.ROUND_HALF_UP).doubleValue();
-        
+
     }
-    
+
 }
