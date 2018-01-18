@@ -5,6 +5,7 @@ D:\studiospace\LifeService\app\src\main\res\layout
 ### 用户模块
 - [人员登录](app/src/main/java/com/linyou/lifeservice/activity/LoginAcitvity.java)
 - [查看购物车](app/src/main/java/com/linyou/lifeservice/activity/ShoppingCarActivity.java)
+- [购物车商品统计的工具类](app/src/main/java/com/linyou/lifeservice/utils/OrderUtil.java)
     - [主导器](app/src/main/java/com/linyou/lifeservice/model/ShoppingCarModel.java)
     - [适配器](app/src/main/java/com/linyou/lifeservice/adapter/ShopCarAdapter.java)
 ### 订单模块
@@ -15,6 +16,7 @@ D:\studiospace\LifeService\app\src\main\res\layout
     - [适配器布局](app/src/main/res/layout/order_item.xml)
 - [订单详情](app/src/main/java/com/linyou/lifeservice/activity/OrderDetailActivity.java)
 - [订单结算](app/src/main/java/com/linyou/lifeservice/activity/ConfirmActivity.java)
+- [订单](app/src/main/java/com/linyou/lifeservice/activity/ConfirmActivity.java)
     - 选择地址 运用了跳转携带数据的方式
 ### 商品模块
 - [商品列表](app/src/main/java/com/linyou/lifeservice/activity/GoodsListActivity.java)
