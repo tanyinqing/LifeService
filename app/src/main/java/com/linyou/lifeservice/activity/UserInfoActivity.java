@@ -47,7 +47,7 @@ public class UserInfoActivity extends TitleBarActivity {
 	@ViewInject(R.id.linearNick)
 	private LinearLayout linearNick;
 
-	@ViewInject(R.id.linearSex)
+	@ViewInject(R.id.linearSex)//改变性别
 	private LinearLayout linearSex;
 
 	@ViewInject(R.id.linearModifyPwd)
