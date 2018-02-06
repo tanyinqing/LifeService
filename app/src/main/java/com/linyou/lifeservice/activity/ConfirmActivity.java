@@ -314,7 +314,7 @@ public class ConfirmActivity extends TitleBarActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
-                    case 0:
+                    case 0://这个是支付宝支付
                         myDialog.dismiss();
                         if (null == mDeliveryAddress) {
                             PublicUtil.ShowToast("请选择地址");

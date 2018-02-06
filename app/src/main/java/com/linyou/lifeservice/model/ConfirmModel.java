@@ -48,7 +48,7 @@ public class ConfirmModel extends BaseModel {
     public ConfirmModel(Context mContext) {
         super(mContext);
         this.mContext=mContext;
-        api =api = WXAPIFactory.createWXAPI(mContext,Constant.APP_ID);
+        api = WXAPIFactory.createWXAPI(mContext,Constant.APP_ID);
         mConfirmGoodsAdapter = new ConfirmGoodsAdapter(mContext);
         mOrderWeb = new OrderWeb(mContext);
         mOrderUtil = OrderUtil.getInstance();

@@ -38,7 +38,7 @@ public class ClassficationAdapter extends AdapterBase<Classfication> {
 
 	@Override
 	protected View getExView(int position, View convertView, ViewGroup parent) {
-		//g etItemÊÇ¸¸ÀàÖĞµÄ·½·¨ ´Ó¸¸ÀàÖĞµÄ·½·¨ÀïµÃµ½Êı¾İ ÔÚÕâÀïÔËÓÃ
+		//g etItemæ˜¯çˆ¶ç±»ä¸­çš„æ–¹æ³• ä»çˆ¶ç±»ä¸­çš„æ–¹æ³•é‡Œå¾—åˆ°æ•°æ® åœ¨è¿™é‡Œè¿ç”¨
 		Classfication mClassfication = (Classfication) getItem(position);
 		image_url=mClassfication.getImage_url();
 		ViewHolder viewHolder;
@@ -47,7 +47,7 @@ public class ClassficationAdapter extends AdapterBase<Classfication> {
 		{
 			viewHolder = new ViewHolder();
 			convertView = mInflater.inflate(R.layout.class_image,parent, false);
-			ViewUtils.inject(viewHolder, convertView);  //Ç°±ßÊÇ¶ÔÏó  ºó±ßÊÇview±äÁ¿
+			ViewUtils.inject(viewHolder, convertView);  //å‰è¾¹æ˜¯å¯¹è±¡  åè¾¹æ˜¯viewå˜é‡
 			convertView.setTag(viewHolder);
 		}
 		else
@@ -55,7 +55,7 @@ public class ClassficationAdapter extends AdapterBase<Classfication> {
 			viewHolder = (ViewHolder) convertView.getTag();
 		}
 		//viewHolder.image.setText("" + mClassfication.getClass_name());
-		//ÉÏÃæÕâ¾ä¿ØÖÆÍ¼ÏñµÄÏÔÊ¾
+		//ä¸Šé¢è¿™å¥æ§åˆ¶å›¾åƒçš„æ˜¾ç¤º
 		//viewHolder.image.setLayoutParams(mLayoutParams);
 		 view=viewHolder.image;
 		view.setLayoutParams(mLayoutParams);
