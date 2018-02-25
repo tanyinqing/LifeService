@@ -23,6 +23,8 @@
 ### 商品模块
 - [商品列表](app/src/main/java/com/linyou/lifeservice/activity/GoodsListActivity.java)
     - 上拉加载，下滑刷新
+### 设置模块
+- [联系我们](app/src/main/java/com/linyou/lifeservice/activity/ContactUsActivity.java)
 ### 其他模块
 - [常量](app/src/main/java/com/linyou/lifeservice/Constant.java)
 - [清单列表](app/src/main/AndroidManifest.xml)
