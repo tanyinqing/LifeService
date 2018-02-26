@@ -3,6 +3,7 @@
 - D:\studiospace\LifeService\app\src\main\res\layout
 - [技术原理文档说明](README.md)
 ### 用户模块
+- [初始页面](app/src/main/java/com/linyou/lifeservice/activity/SplashScreenActivity.java)
 - [人员登录](app/src/main/java/com/linyou/lifeservice/activity/LoginAcitvity.java)
 - [查看购物车](app/src/main/java/com/linyou/lifeservice/activity/ShoppingCarActivity.java)
 - [修改资料](app/src/main/java/com/linyou/lifeservice/activity/UserInfoActivity.java)
@@ -25,6 +26,9 @@
     - 上拉加载，下滑刷新
 ### 设置模块
 - [联系我们](app/src/main/java/com/linyou/lifeservice/activity/ContactUsActivity.java)
+### 通用模块
+- [注册](app/src/main/java/com/linyou/lifeservice/activity/RegisterAcitivty.java)
+
 ### 其他模块
 - [常量](app/src/main/java/com/linyou/lifeservice/Constant.java)
 - [清单列表](app/src/main/AndroidManifest.xml)
