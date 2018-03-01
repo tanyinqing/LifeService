@@ -4,6 +4,7 @@
 - [技术原理文档说明](README.md)
 ### 用户模块
 - [初始页面](app/src/main/java/com/linyou/lifeservice/activity/SplashScreenActivity.java)
+- [主页面](app/src/main/java/com/linyou/lifeservice/activity/MainActivity.java)
 - [人员登录](app/src/main/java/com/linyou/lifeservice/activity/LoginAcitvity.java)
 - [查看购物车](app/src/main/java/com/linyou/lifeservice/activity/ShoppingCarActivity.java)
 - [修改资料](app/src/main/java/com/linyou/lifeservice/activity/UserInfoActivity.java)
