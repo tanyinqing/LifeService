@@ -101,8 +101,8 @@
                         android:id="@+id/editContent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:imeOptions="actionSearch"
                         android:singleLine="true"
+                        android:imeOptions="actionSearch"
                         android:drawableLeft="@drawable/ic_search"
                         android:hint="输入商品名字" />
                 </LinearLayout>
