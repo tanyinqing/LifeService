@@ -7,6 +7,8 @@
 - [主页面](app/src/main/java/com/linyou/lifeservice/activity/MainActivity.java)
 - [人员登录](app/src/main/java/com/linyou/lifeservice/activity/LoginAcitvity.java)
 - [查看购物车](app/src/main/java/com/linyou/lifeservice/activity/ShoppingCarActivity.java)
+- [个人中心](app/src/main/java/com/linyou/lifeservice/activity/UserCenterActivity.java)
+- [修改密码](app/src/main/java/com/linyou/lifeservice/activity/ModifyPassWordActivity.java)
 - [修改资料](app/src/main/java/com/linyou/lifeservice/activity/UserInfoActivity.java)
     - [性别底部弹出框](app/src/main/java/com/linyou/lifeservice/customdialog/PopSexDialog.java)
 - [购物车商品统计的工具类](app/src/main/java/com/linyou/lifeservice/utils/OrderUtil.java)
