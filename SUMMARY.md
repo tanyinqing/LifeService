@@ -26,6 +26,7 @@
     - 选择地址 运用了跳转携带数据的方式
 ### 商品模块
 - [商品列表](app/src/main/java/com/linyou/lifeservice/activity/GoodsListActivity.java)
+- [商品详情](app/src/main/java/com/linyou/lifeservice/activity/GoodsDetailActivity.java)
     - 上拉加载，下滑刷新
 ### 设置模块
 - [联系我们](app/src/main/java/com/linyou/lifeservice/activity/ContactUsActivity.java)
