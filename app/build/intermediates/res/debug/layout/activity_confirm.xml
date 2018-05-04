@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
+    android:layout_height="match_parent">
+    <!--整体采用滚动布局-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
+        android:orientation="vertical">
+        <!--姓名这个小盒子-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:orientation="horizontal"
             android:padding="10dp"
-            android:paddingLeft="16dp" >
+            android:paddingLeft="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
                 android:text="姓名"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
-
+            <!--把焦点给抢过去-->
             <LinearLayout
                 android:layout_width="0px"
                 android:layout_height="0px"
@@ -48,7 +48,7 @@
             android:background="@android:color/white"
             android:orientation="horizontal"
             android:padding="10dp"
-            android:paddingLeft="16dp" >
+            android:paddingLeft="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="10dp"
-            android:paddingLeft="16dp" >
+            android:paddingLeft="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
         </LinearLayout>
 
         <include layout="@layout/divider_gray" />
-
+        <!--这个是支付方式 隐藏掉了-->
         <LinearLayout
             android:id="@+id/linearPayType"
             android:layout_width="match_parent"
@@ -151,6 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp">
+
             <TextView
                 android:id="@+id/textGoodsCount"
                 android:layout_width="wrap_content"
@@ -158,6 +159,7 @@
                 android:text="商品清单（0）"
                 android:textColor="@color/green"
                 android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/textCost"
                 android:layout_width="wrap_content"
@@ -182,7 +184,7 @@
             android:layout_marginTop="24dp"
             android:background="@color/white"
             android:orientation="horizontal"
-            android:padding="10dp" >
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -193,7 +195,7 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <EditText
                     android:id="@+id/editRemark"
@@ -201,10 +203,9 @@
                     android:layout_height="match_parent"
                     android:background="@color/white"
                     android:gravity="left|top"
-                    android:maxLength="100"
-                    android:textSize="14sp"
                     android:hint="请注明其他需求，如:牛肉丝要10元的，鱼要1斤左右。"
-                  />
+                    android:maxLength="100"
+                    android:textSize="14sp" />
                 <!-- android:text="手机app测试，不用送货"-->
 
                 <TextView
@@ -224,7 +225,7 @@
             android:background="@color/white"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="10dp" >
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
